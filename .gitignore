@@ -1,0 +1,38 @@
+# --- Secrets -----------------------------------------------------------------
+# Never commit real credentials. Only .env.example (placeholders) is tracked.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.toml
+.streamlit/secrets.toml
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.installed.cfg
+
+# --- Virtual environments ----------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# --- Tooling / caches --------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Editors / OS ------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+# Core runtime dependencies. `pip install -r requirements.txt` succeeds with
+# only these — the app runs end-to-end on the OpenAI fallback path.
+streamlit>=1.36,<2.0
+openai>=1.40,<2.0
+python-dotenv>=1.0,<2.0
+httpx>=0.27,<1.0
+tenacity>=8.2,<10.0
+
+# Optional: the OpenClaw-native agent runtime. It is NOT required to run the
+# app — `run_agent` automatically falls back to OpenAI when the package or the
+# local gateway is unavailable. Install it separately if you operate a gateway:
+#   pip install "openclaw-sdk>=2.0,<3.0"
+
+# Optional: test dependency.
+#   pip install pytest
